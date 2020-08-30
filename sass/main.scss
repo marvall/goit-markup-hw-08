@@ -1,0 +1,48 @@
+// файл нормалайза 
+@import './base/normalize';
+
+// Переменные и базовые стили, сбросы 
+@import './utils/variables';
+@import './base/reset';
+
+// Общие стили для Контейнера и сецкий 
+@import './components/container';
+@import './components/section';
+
+//Логотип
+@import './components/logo';
+
+// Шапка. Навикацию и лист контактов 
+@import './components/header';
+
+//Социальные иконки для секций и подвала
+@import './components/social-page';
+
+//Подвал. и окно формы в пдавале
+@import './components/footer';
+@import './components/footer-form';
+@import './components/submit-buttom';
+
+//======================Main Page======================
+//Секция Hero
+@import './layout/main-page/hero';
+
+//Секция Our-Principles
+@import './layout/main-page/our-principles';
+
+//Секция What-we-do
+@import './layout/main-page/what-we-do';
+
+//Секция Our-Team
+@import './layout/main-page/our-team';
+
+//Секция Company
+@import './layout/main-page/company';
+
+//======================Modal window====================
+@import './components/modal';
+
+//======================Portfolio=======================
+//Секция Product
+@import './layout/portfolio-page/filter-button';
+@import './layout/portfolio-page/product';

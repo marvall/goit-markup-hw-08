@@ -1,0 +1,37 @@
+/* ---footer form ---*/
+.footer-form {
+  display: flex;
+}
+
+.submit-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: $secendary-text-color;
+}
+.footer-email {
+  width: 358px;
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  &::placeholder {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.25em;
+    color: $secendary-footer-color;
+  }
+  &:focus {
+    outline: none;
+    color: $secendary-text-color;
+  }
+}
+  

@@ -1,0 +1,40 @@
+body {
+    color: $main-text-color;
+    font-family: $main-font;
+    font-style: normal;
+    letter-spacing: 0.03em;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ---- Styles for most links ----- */
+.link {
+  text-decoration: none;
+  .state-active {
+    /* status active page*/
+    color: $main-action-color;
+  }
+}
+/* --- Styles for most list --- */
+.list {
+  list-style: none;
+}
+/* --- Styles for most tittle --- */
+.title {
+  color: $main-title-color;
+  letter-spacing: 0.03em;
+}

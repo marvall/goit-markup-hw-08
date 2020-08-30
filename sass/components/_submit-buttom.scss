@@ -1,0 +1,28 @@
+.submit-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 34px;
+    padding-right: 23px;
+    border-radius: 4px;
+    border-style: none;
+  
+    /*display выравнивает SVG*/
+    display: flex;
+    align-items: center;
+  
+    background-color: $main-action-color;
+    color: $secendary-text-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87em;
+  
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      outline: none;
+    }
+  }

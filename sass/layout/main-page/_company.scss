@@ -1,0 +1,43 @@
+/* ---- SECTION COMPANY ----*/
+.company-list {
+  display: flex;
+  .company-list-svg {
+    fill: $svg-color;
+  
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+}
+.company-list-item{
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.company-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  border-color: $svg-color;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $main-action-color;
+    outline: none;
+  }
+}
+.company-list-svg {
+  .company-list-link:hover &,
+  .company-list-link:focus &{
+    fill: $main-action-color;
+  }
+}

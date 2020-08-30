@@ -1,0 +1,57 @@
+/*  ---- FOOTER  -----*/
+.contact { 
+  .link {
+    color: $secendary-footer-color;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71em;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: $bg-footer;
+  letter-spacing: 0.03em;
+
+  .container {
+      display: flex;
+  }
+  .maps {
+      color: $secendary-text-color;
+  }
+  p {
+      color: $secendary-text-color;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14em;
+      text-transform: uppercase;
+      margin: 0;
+      margin-top: 12px;
+      margin-bottom: 20px;
+  }
+  .logo {
+      display: block;
+      margin-bottom: 20px;
+      color: $secendary-text-color;
+      
+  }
+  .social-link-svg {
+      fill: $secendary-text-color;
+  }
+    
+}
+.footer-block{
+  &:first-child {
+    margin-right: 70px;
+  }
+  &:last-child {
+    margin-left: 94px;
+  }
+} 
+
+  

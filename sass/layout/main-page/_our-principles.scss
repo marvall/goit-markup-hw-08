@@ -1,0 +1,42 @@
+/* ---- SECTIOND "Наши Принципы" ---- */
+.principles-section {
+    padding-bottom: 0px;
+  }
+.our-principles {
+  display: flex;
+  .title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    text-transform: uppercase;
+  } 
+  .description {
+    margin: 0;
+  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17em;
+  }
+  svg {
+    margin: auto;
+  }
+} 
+.principles-item{
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.principles-img-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $bg-button;
+}
+  
+  
+  
+ 
