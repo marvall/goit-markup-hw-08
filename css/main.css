@@ -477,6 +477,7 @@ img {
 
 .header-wrapper {
   width: 100%;
+  display: none;
 }
 
 .main-menu,
@@ -553,10 +554,9 @@ img {
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    translate: transformX(-1000px);
   }
   .header-wrapper.is-open {
-    translate: transformX(0px);
+    display: flex;
     opacity: 1;
   }
   .main-menu-link,
