@@ -8,7 +8,6 @@
 }  
 .header-wrapper{
   width: 100%;
-  display: flex;
 }
 .main-menu, 
 .contact-menu {
@@ -72,6 +71,7 @@
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 100;
 
     align-items: center;
     flex-direction: column;
@@ -85,8 +85,10 @@
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    translate: transformX(-1000px);
   }
   .header-wrapper.is-open{
+    translate: transformX(0px);
     opacity: 1;
   }
   .main-menu-link,
@@ -153,7 +155,8 @@
   .button-header-menu{
     display: none;
   }
-  .header-wrapper{   
+  .header-wrapper{ 
+    display: flex;  
     justify-content: center;
     align-items: center;
   }

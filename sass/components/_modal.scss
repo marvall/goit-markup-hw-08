@@ -22,7 +22,6 @@
   padding: 40px;
   box-sizing: border-box;
   position: absolute;
-  width: 528px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -219,5 +218,18 @@
   .close:focus &,
   .close:hover &{
     fill: $main-action-color;
+  }
+}
+
+@media screen and (min-width: 320px){
+  .modal-form{
+    box-sizing: border-box;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .modal-form{
+    width: 528px;
   }
 }

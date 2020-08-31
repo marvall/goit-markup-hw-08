@@ -1,36 +1,47 @@
 /* ----SECTION WHAT WE DO----*/
-.what-we-do {
-  letter-spacing: 0.03em;
-  .description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  
-    padding-top: 27px;
-    padding-bottom: 27px;
-    width: 100%;
-  
-    background-color: $bg-what-we-do-tittle;
-    color: $secendary-text-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14em;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
+.what-we-do{
+  display: none;
+}
+@media screen and (min-width: 1200px){
+  .what-we-do {
+    display: block;
+    letter-spacing: 0.03em;
+    .description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    
+      padding-top: 27px;
+      padding-bottom: 27px;
+      width: 100%;
+    
+      background-color: $bg-what-we-do-tittle;
+      color: $secendary-text-color;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14em;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+  .what-we-do-img-container {
+    position: relative;
+  } 
+  .what-we-do-list {
+      display: flex;
+  }
+  .what-we-do-item {
+    width: 370px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    } 
   }
 }
-.what-we-do-img-container {
-  position: relative;
-} 
-.what-we-do-list {
-    display: flex;
-}
-.what-we-do-item {
-  width: 370px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  } 
-}
+
+
+
+
+
 
   

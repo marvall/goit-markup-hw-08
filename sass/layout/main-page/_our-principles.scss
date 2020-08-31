@@ -1,7 +1,4 @@
 /* ---- SECTIOND "Наши Принципы" ---- */
-.principles-section {
-    padding-bottom: 0px;
-  }
 .our-principles {
   display: flex;
   .title {
@@ -13,19 +10,12 @@
   } 
   .description {
     margin: 0;
-  
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.17em;
+    line-height: 1.71em;
   }
   svg {
     margin: auto;
-  }
-} 
-.principles-item{
-  width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
   }
 }
 .principles-img-container {
@@ -36,6 +26,43 @@
   margin-bottom: 30px;
   background-color: $bg-button;
 }
+@media screen and (min-width: 320px){
+  .our-principles{
+    flex-wrap: wrap;
+    .title{
+      text-align: center;
+    }
+  }
+  .principles-item{
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px){
+  .principles-item{
+    width: 354px;
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1200px){
+  .principles-section {
+    padding-bottom: 0px;
+  }
+  .principles-item{
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+
+
+
+
+ 
+
   
   
   
