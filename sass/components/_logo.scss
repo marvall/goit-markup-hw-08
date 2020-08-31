@@ -1,16 +1,21 @@
 /* ---- LOGO ----- */
 .logo {
+  display: block;
   color: $logo-main;
   font-family: $logo-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2em;
+  font-size: 24px;
+  white-space: nowrap;
+  line-height: 1.16em;
   > span {
     color: $main-action-color;
   }
 }
   
  
-  
-  
-  
+@media screen and (min-width: 1200px){
+  .logoP{
+    font-size: 26px;
+    line-height: 1.2em;
+  }
+}

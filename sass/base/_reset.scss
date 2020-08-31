@@ -24,7 +24,8 @@ body {
   /* ---- Styles for most links ----- */
 .link {
   text-decoration: none;
-  .state-active {
+  font-style: normal;
+  &.state-active {
     /* status active page*/
     color: $main-action-color;
   }
