@@ -15,60 +15,67 @@
     <header class="header">
       <div class="container">
         <!-- Основной блок навигации + контакты.  -->
-        <nav class="main-navigation">
-          <a class="logo link" href="./index.html" lang="en"
-            ><span>Web</span> Studio</a
-          >
-          <ul class="list main-menu">
-            <li class="main-menu-item state-active">
-              <a class="main-menu-link state-active link" href="./index.html">Студия</a>
+        <a class="logo link" href="./index.html" lang="en"
+            ><span>Web</span> Studio</a>
+        <button type="button" aria-expanded="false" class="button-header-menu">
+          <svg>
+            <use class="icon-burger" href="./images/sprite.svg#menu"></use>
+            <use class="icon-close" href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="header-wrapper">    
+          <nav class="main-navigation">
+            <ul class="list main-menu">
+              <li class="main-menu-item state-active">
+                <a class="main-menu-link state-active link" href="./index.html">Студия</a>
+              </li>
+              <li class="main-menu-item">
+                <a class="main-menu-link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="main-menu-item">
+                <a class="main-menu-link link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list contact-menu">
+            <li class="contact-menu-item">
+              <address>
+                <a class="contact-menu-link link" href="mailto:info@devstudio.com"
+                  ><svg class="contact-menu-svg" width="16" height="12">
+                    <use href="./images/sprite.svg#mail"></use>
+                  </svg>
+                
+                  info@devstudio.com</a
+                >
+              </address>
             </li>
-            <li class="main-menu-item">
-              <a class="main-menu-link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="main-menu-item">
-              <a class="main-menu-link link" href="#contacts">Контакты</a>
+            <li class="contact-menu-item">
+              <address>
+                <a class="contact-menu-link link" href="tel:+380961111111">
+                  <svg class="contact-menu-svg" width="10" height="15">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </address>
             </li>
           </ul>
-        </nav>
-        <ul class="list contact-menu">
-          <li class="contact-menu-item">
-            <address>
-              <a class="contact-menu-link link" href="mailto:info@devstudio.com"
-                ><svg class="contact-menu-svg" width="16" height="12">
-                  <use href="./images/sprite.svg#mail"></use>
-                </svg>
-
-                info@devstudio.com</a
-              >
-            </address>
-          </li>
-          <li class="contact-menu-item">
-            <address>
-              <a class="contact-menu-link link" href="tel:+380961111111">
-                <svg class="contact-menu-svg" width="10" height="15">
-                  <use href="./images/sprite.svg#phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </address>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- Hero секция-->
-      <section class="hero-section">
+      <!-- <section class="hero-section">
         <h1 class="hero-title">
           Эффективные решения<br />
           для вашего бизнеса
         </h1>
         <button class="hero button" data-modal-open>Заказать услугу</button>
-      </section>
+      </section> -->
       <!--
         Секция о нас
       -->
-      <section class="principles-section section">
+      <!-- <section class="principles-section section">
         <div class="container">
           <h2 hidden>Наши принципы</h2>
           <ul class="list our-principles">
@@ -122,9 +129,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Секция чем мы занимаемся -->
-      <section class="what-we-do section">
+      <!-- <section class="what-we-do section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list what-we-do-list">
@@ -163,9 +170,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Секция наша комманда. -->
-      <section class="our-team section">
+      <!-- <section class="our-team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list our-team-list">
@@ -395,9 +402,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Секция Постоянные клиенты-->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list company-list">
@@ -445,10 +452,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- подложка сайта.-->
-    <footer id="contacts" class="footer">
+    <!-- <footer id="contacts" class="footer">
       <div class="container">
         <div class="footer-block">
           <a class="logo link" href="/"><span>Web</span> Studio</a>
@@ -478,7 +485,6 @@
         </div>
         <div class="footer-block">
           <p>присоединяйтесь</p>
-          <!-- иконки соц.сетей должны быть добавлены СSS-->
           <ul class="list social-page">
             <li>
               <a
@@ -544,9 +550,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- modal window-->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <form action="#" class="modal-form">
         <p>Оставьте свои данные, мы вам перезвоним</p>
         <div class="modal-element-wrapper">
@@ -623,7 +629,7 @@
           </svg>
         </button>
       </form>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
