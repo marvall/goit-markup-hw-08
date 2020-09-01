@@ -223,13 +223,32 @@
 
 @media screen and (min-width: 320px){
   .modal-form{
-    box-sizing: border-box;
     width: 450px;
+  }
+  .modal-form-option-label{
+    > span {
+      font-size: 12px;
+      line-height: 1.71em;
+    }
+    a {
+      font-size: 12px;
+      line-height: 1.71em;
+    }
   }
 }
 
 @media screen and (min-width: 1200px){
   .modal-form{
     width: 528px;
+  }
+  .modal-form-option-label{
+    > span {
+      font-size: 14px;
+      line-height: 1.16em;
+    }
+    a {
+      font-size: 14px;
+      line-height: 1.16em;
+    }
   }
 }
