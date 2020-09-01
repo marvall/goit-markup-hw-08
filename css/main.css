@@ -387,8 +387,8 @@ img {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 14px;
+  padding-right: 14px;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -783,11 +783,13 @@ img {
     flex-wrap: wrap;
     padding-left: 74px;
   }
-  .footer .footer-block:first-child {
+  .footer-block:first-child {
     margin-right: 165px;
   }
-  .footer .footer-block:last-child {
-    margin: auto;
+  .footer-block:last-child {
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1497,14 +1499,29 @@ img {
 
 @media screen and (min-width: 320px) {
   .modal-form {
-    box-sizing: border-box;
     width: 450px;
+  }
+  .modal-form-option-label > span {
+    font-size: 12px;
+    line-height: 1.71em;
+  }
+  .modal-form-option-label a {
+    font-size: 12px;
+    line-height: 1.71em;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal-form {
     width: 528px;
+  }
+  .modal-form-option-label > span {
+    font-size: 14px;
+    line-height: 1.16em;
+  }
+  .modal-form-option-label a {
+    font-size: 14px;
+    line-height: 1.16sem;
   }
 }
 
@@ -1572,7 +1589,6 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
-  letter-spacing: 0.06em;
 }
 
 .product-type {
@@ -1649,6 +1665,9 @@ img {
   .product-content-item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .product-title {
+    letter-spacing: 0.06em;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1661,6 +1680,11 @@ img {
   .product-content-item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .product-title {
+    display: block;
+    overflow: hidden;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1672,6 +1696,9 @@ img {
   }
   .product-content-item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
+  }
+  .product-title {
+    letter-spacing: 0.06em;
   }
 }
 /*# sourceMappingURL=main.css.map */
